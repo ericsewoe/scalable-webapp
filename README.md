@@ -104,7 +104,7 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
   - **Target Group**: Select `webapp-TG`.
   - **Security Group**: Allow HTTP (port 80).
 
-![Step 4 Screenshot](./assets/screenshots/step4-laod-balancer.png)
+![Step 4 Screenshot](./assets/screenshots/step4-load-balancer.png)
 
 ---
 
