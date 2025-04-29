@@ -26,30 +26,18 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
 
 ---
 
+## 👥 Collaborators
+
+- **Eric [You]**
+- **Augustine Tetteh Ozor**
+
+---
+
 ## 🏛️ Architecture Overview
 
-     [Users/Clients]
-           |
-           v
-+-------------------------+
-|   Application Load       |
-|       Balancer (ALB)      |
-+-------------------------+
-           |
-           v
-+---------------------------+
-|      Target Group         |
-|  (Registered EC2 Instances)|
-+---------------------------+
-           |
-           v
-+--------------------------+
-|  Auto Scaling Group (ASG) |
-| - Min Instances: 1        |
-| - Desired Capacity: 2     |
-| - Max Instances: 4        |
-+--------------------------+
+![Architecture Diagram](./architecture-diagram.png)
 
+---
 
 - **Auto Scaling** is configured based on CPU Utilization.
 - **ALB** distributes traffic across instances in **multiple Availability Zones**.
