@@ -35,7 +35,7 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
 
 ## 🏛️ Architecture Overview
 
-![Architecture Diagram](./architecture-diagram.png)
+![Architecture Diagram](./assets/architecture-diagram.png)
 
 ---
 
@@ -67,6 +67,8 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
     ```
 - Launch the instance.
 
+![Step 1 Screenshot](./assets/screenshots/step1-launch-ec2.png)
+
 ---
 
 ### Step 2: Create a Launch Template
@@ -74,6 +76,8 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
 - Settings:
   - **Launch Template Name**: `webapp-LT`
   - **Auto Scaling guidance**: Enabled.
+
+![Step 2 Screenshot](./assets/screenshots/step2-launch-template.png)
 
 ---
 
@@ -84,6 +88,8 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
   - **Target group name**: `webapp-TG`
   - Leave default settings.
 - Register the running instance.
+
+![Step 3 Screenshot](./assets/screenshots/step2-target-group.png)
 
 ---
 
@@ -97,6 +103,8 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
   - **Listener Protocol**: HTTP on port 80.
   - **Target Group**: Select `webapp-TG`.
   - **Security Group**: Allow HTTP (port 80).
+
+![Step 4 Screenshot](./assets/screenshots/step2-laod-balancer.png)
 
 ---
 
@@ -114,6 +122,8 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
   - **Scale Out**: Add instance when CPU > 60%
   - **Scale In**: Remove instance when CPU < 40%
 
+![Step 5 Screenshot](./assets/screenshots/step2-auto-scaling-group.png)
+
 ---
 
 ## 🧪 Testing
@@ -125,6 +135,9 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
 
 
 - Refreshing multiple times will show responses from different instances.
+
+![Step 6 Screenshot](./assets/screenshots/step2-verify-scaling1.png)
+![Step 6 Screenshot](./assets/screenshots/step2-verify-scaling2.png)
 
 ---
 
