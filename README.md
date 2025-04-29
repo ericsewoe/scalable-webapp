@@ -28,7 +28,7 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
 
 ## 👥 Collaborators
 
-- **Eric [You]**
+- **Eric Gomado**
 - **Augustine Tetteh Ozor**
 
 ---
@@ -144,15 +144,3 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
 - **Apache2 Web Server (Ubuntu)**
 
 ---
-
-## 👥 Contributors
-
-- **Eric Gomado**
-- **Augustine Tetteh Ozor**
-
----
-
-
-
-
-
