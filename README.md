@@ -89,7 +89,7 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
   - Leave default settings.
 - Register the running instance.
 
-![Step 3 Screenshot](./assets/screenshots/step2-target-group.png)
+![Step 3 Screenshot](./assets/screenshots/step3-target-group.png)
 
 ---
 
@@ -104,7 +104,7 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
   - **Target Group**: Select `webapp-TG`.
   - **Security Group**: Allow HTTP (port 80).
 
-![Step 4 Screenshot](./assets/screenshots/step2-laod-balancer.png)
+![Step 4 Screenshot](./assets/screenshots/step4-laod-balancer.png)
 
 ---
 
@@ -122,7 +122,7 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
   - **Scale Out**: Add instance when CPU > 60%
   - **Scale In**: Remove instance when CPU < 40%
 
-![Step 5 Screenshot](./assets/screenshots/step2-auto-scaling-group.png)
+![Step 5 Screenshot](./assets/screenshots/step5-auto-scaling-group.png)
 
 ---
 
@@ -136,8 +136,8 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
 
 - Refreshing multiple times will show responses from different instances.
 
-![Step 6 Screenshot](./assets/screenshots/step2-verify-scaling1.png)
-![Step 6 Screenshot](./assets/screenshots/step2-verify-scaling2.png)
+![Step 6 Screenshot](./assets/screenshots/verify-scaling1.png)
+![Step 6 Screenshot](./assets/screenshots/verify-scaling2.png)
 
 ---
 
