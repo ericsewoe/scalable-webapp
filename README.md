@@ -72,10 +72,10 @@ The goal is to allow the WebApp to **automatically scale** during traffic spikes
 ---
 
 ### Step 2: Create a Launch Template
-- Go to **EC2** → **Launch Templates** → **Create Launch Template**.
-- Settings:
-  - **Launch Template Name**: `webapp-LT`
-  - **Auto Scaling guidance**: Enabled.
+- Select the instance created above  
+- Go to **Actions → Image and templates → Create template from instance**  
+- **Name:** `webapp-LT`  
+- Leave other settings as default and create the launch template
 
 ![Step 2 Screenshot](./assets/screenshots/step2-launch-template.png)
 
